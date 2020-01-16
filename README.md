@@ -1,14 +1,14 @@
 # Data Structure Javascript
 
 Data Structure and methods
-- Stack
+- [Stack](#stack)
   - push(item) 
   - pop() 
   - peek() 
   - size()
   - isEmpty() 
   - printStack() 
-- Set
+- [Set](#set)
   - add()
   - remove()
   - has()
