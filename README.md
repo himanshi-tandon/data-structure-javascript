@@ -18,16 +18,61 @@ Data Structure and methods
   - intersection()
   - difference()
   - subset()
-- Queues and Pripority Queues
-- Binary Search tree
-- Binary Search Tree: Traversal & Height
-- Map
-- Hash Table
-- Linked List
-- Trie
-- Heap
-- Graph 
-- Graphs: breadth-first search
+- [Queues and Pripority Queues](#set)
+  - print()
+  - enqueue()
+  - dequeue()
+  - front()
+  - size()
+  - isEmpty()
+- [Binary Search tree](#set)
+  - add()
+  - findMin()
+  - findMax()
+  - find(data)
+  - isPresent(data)
+  - remove(data)
+  - isBalanced()
+  - findMinHeight(node)
+  - findMaxHeight(node)
+  - inOrder()
+  - preOrder()
+  - postOrder()
+  - levelOrder()
+- [Binary Search Tree: Traversal & Height](#set)
+  - add()
+  - findMin()
+  - findMax()
+  - find(data)
+  - isPresent(data)
+  - remove(data)
+  - isBalanced()
+  - findMinHeight(node)
+  - findMaxHeight(node)
+  - inOrder()
+  - preOrder()
+  - postOrder()
+  - levelOrder()
+- [Map](#set)
+- [Hash Table](#set)
+  - print()
+  - add()
+  - remove()
+  - lookup()
+- [Linked List](#set)
+  - size()
+  - head()
+  - add()
+  - remove()
+  - isEmpty()
+  - indexOf()
+  - elementAt()
+  - addAt()
+  - removeAt()
+- [Trie](#set)
+- [Heap](#set)
+- [Graph](#set) 
+- [Graphs: breadth-first search](#set)
 
 ## Stack 
 Stack is a linear data structure in which addition or removal of element follows a particular order i.e. LIFO(Last in First Out) AND FILO(First in Last Out).
@@ -154,3 +199,13 @@ myStack.printStack() // "1 "
 ```
 
 ## Set
+## Queues and Pripority Queues
+## Binary Search tree
+## Binary Search Tree: Traversal & Height
+## Map
+## Hash Table
+## Linked List
+## Trie
+## Heap
+## Graph 
+## Graphs: breadth-first search
