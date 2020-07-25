@@ -107,6 +107,7 @@ swap: Constant — O(1)
 - **isEmpty():** return true if the stack is empty
 - **printStack():** This method returns a string in which all the element of an stack is concatenated.
 
+swap — the two top most elements of the stack can be swapped
   ![Stack vs Queue](images/stack_vs_queue.png)
 
 ### Method one
