@@ -330,6 +330,25 @@ console.log(setD.add("d"));
 
 ## Queues and Pripority Queues
 A Queue works on the FIFO(First in First Out) principle. Hence, it performs two basic operations that is addition of elements at the end of the queue and removal of elements from the front of the queue. Like Stack, Queue is also a linear data structure.
+
+A queue is like a line at a restaurant. It’s “first in, first out” (FIFO), which means that the item that was put in the queue longest ago is the first item that comes out. “First come, first served.”
+
+
+Queues have two main methods:
+
+enqueue() : Adds a node (value)
+dequeue() : Removes and returns the next node in the queue
+
+They can also include other utility methods:
+peek() : Returns the node at the front of the queue (without removing)
+isEmpty() : Returns True if the queue is empty, otherwise returns false
+
+enqueue: Constant — O(1)
+dequeue: Constant — O(1)
+
+Code
+peek: Constant — O(1)
+isEmpty: Constant — O(1)
 ```javascript
 /* Queues */
 
