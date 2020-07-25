@@ -337,17 +337,21 @@ A queue is like a line at a restaurant. It’s “first in, first out” (FIFO),
 Queues have two main methods:
 
 enqueue() : Adds a node (value)
+
 dequeue() : Removes and returns the next node in the queue
 
 They can also include other utility methods:
 peek() : Returns the node at the front of the queue (without removing)
+
 isEmpty() : Returns True if the queue is empty, otherwise returns false
 
 enqueue: Constant — O(1)
+
 dequeue: Constant — O(1)
 
 Code
 peek: Constant — O(1)
+
 isEmpty: Constant — O(1)
 ```javascript
 /* Queues */
