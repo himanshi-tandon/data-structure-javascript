@@ -85,11 +85,20 @@ Data Structure and methods
     - remove()
 - [Graph](#graph) 
 - [Graphs: breadth-first search](#graphs-breadth-first-search)
-
+Time complexcity
 ## Stack 
 Stack is a linear data structure in which addition or removal of element follows a particular order i.e. LIFO(Last in First Out) AND FILO(First in Last Out).
 
 A real-world example is a stack of plates. we can see that the plate that is inserted last is the first one to be taken off.
+
+Time complexity
+If you don’t know much about time complexity, you’ll be lost until you read this short article on time complexity in JavaScript. For each method on the stack, the worst-case time complexity is constant — O(1). This means that as the stack grows to n size, each method completes its job in the same amount of time.
+push: Constant — O(1)
+pop: Constant — O(1)
+peek: Constant — O(1)
+empty: Constant — O(1)
+size: Constant — O(1)
+swap: Constant — O(1)
 
 - **push(item):** Adds an element to the stack
 - **pop():** Removes an element from the stack, if the function is call on an empty stack it indicates “Underflow”
