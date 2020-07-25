@@ -88,6 +88,9 @@ Data Structure and methods
 
 ## Stack 
 Stack is a linear data structure in which addition or removal of element follows a particular order i.e. LIFO(Last in First Out) AND FILO(First in Last Out).
+
+A real-world example is a stack of plates. we can see that the plate that is inserted last is the first one to be taken off.
+
 - **push(item):** Adds an element to the stack
 - **pop():** Removes an element from the stack, if the function is call on an empty stack it indicates “Underflow”
 - **peek():** returns the top most elements in the stack, but doesn’t delete it.
