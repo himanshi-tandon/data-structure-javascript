@@ -478,7 +478,7 @@ peek: Constant — O(1)
 isEmpty: Constant — O(1)
 
 
-![Queue](images/queue.png.png)
+![Queue](images/queue.png)
 ```javascript
 /* Queues */
 
