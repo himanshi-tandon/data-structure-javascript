@@ -226,6 +226,52 @@ myStack.printStack() // "1 "
 ```
 
 ## Set
+Set objects are collections of values. You can iterate through the elements of a set in insertion order. A value in the Set may only occur once; it is unique in the Set's collection.
+
+Constructor
+
+Set()
+
+Creates a new Set object.
+
+Set.prototype.size
+
+Returns the number of values in the Set object.
+
+
+Set.prototype.add(value)
+
+Appends value to the Set object. Returns the Set object. 
+
+Set.prototype.clear()
+
+Removes all elements from the Set object.
+
+Set.prototype.delete(value)
+
+Removes the element associated to the value and returns the value that Set.prototype.has(value) would have previously returned. Set.prototype.has(value) will return false afterwards.
+
+
+Set.prototype.entries()
+
+Returns a new Iterator object that contains an array of [value, value] for each element in the Set object, in insertion order.
+
+This is similar to the Map object, so that each entry's key is the same as its value for a Set.
+
+Set.prototype.forEach(callbackFn[, thisArg])
+
+Calls callbackFn once for each value present in the Set object, in insertion order. If a thisArg parameter is provided, it will be used as the this value for each invocation of callbackFn
+.
+Set.prototype.has(value)
+
+Returns a boolean asserting whether an element is present with the given value in the Set object or not.
+
+Set.prototype.keys()
+
+Returns a new Iterator object that yields the values for each element in the Set object in insertion order. (For Sets, this is the same as the values() method.)
+Set.prototype.values()
+
+Returns a new Iterator object that yields the values for each element in the Set object in insertion order. (For Sets, this is the same as the keys() method.)
 
 ```javascript
 /* Sets */
@@ -327,6 +373,82 @@ console.log(setD.values())
 setD.delete("a");
 console.log(setD.has("a"));
 console.log(setD.add("d"));
+
+
+
+
+
+Using the Set object
+let mySet = new Set()
+
+mySet.add(1)           // Set [ 1 ]
+mySet.add(5)           // Set [ 1, 5 ]
+mySet.add(5)           // Set [ 1, 5 ]
+mySet.add('some text') // Set [ 1, 5, 'some text' ]
+let o = {a: 1, b: 2}
+mySet.add(o)
+
+mySet.add({a: 1, b: 2})   // o is referencing a different object, so this is okay
+
+mySet.has(1)              // true
+mySet.has(3)              // false, since 3 has not been added to the set
+mySet.has(5)              // true
+mySet.has(Math.sqrt(25))  // true
+mySet.has('Some Text'.toLowerCase()) // true
+mySet.has(o)       // true
+
+mySet.size         // 5
+
+mySet.delete(5)    // removes 5 from the set
+mySet.has(5)       // false, 5 has been removed
+
+mySet.size         // 4, since we just removed one value
+
+console.log(mySet)
+// logs Set(4) [ 1, "some text", {…}, {…} ] in Firefox
+// logs Set(4) { 1, "some text", {…}, {…} } in Chrome
+Iterating Sets
+// iterate over items in set
+// logs the items in the order: 1, "some text", {"a": 1, "b": 2}, {"a": 1, "b": 2} 
+for (let item of mySet) console.log(item)
+
+// logs the items in the order: 1, "some text", {"a": 1, "b": 2}, {"a": 1, "b": 2} 
+for (let item of mySet.keys()) console.log(item)
+ 
+// logs the items in the order: 1, "some text", {"a": 1, "b": 2}, {"a": 1, "b": 2} 
+for (let item of mySet.values()) console.log(item)
+
+// logs the items in the order: 1, "some text", {"a": 1, "b": 2}, {"a": 1, "b": 2} 
+// (key and value are the same here)
+for (let [key, value] of mySet.entries()) console.log(key)
+
+// convert Set object to an Array object, with Array.from
+let myArr = Array.from(mySet) // [1, "some text", {"a": 1, "b": 2}, {"a": 1, "b": 2}]
+
+// the following will also work if run in an HTML document
+mySet.add(document.body)
+mySet.has(document.querySelector('body')) // true
+
+// converting between Set and Array
+mySet2 = new Set([1, 2, 3, 4])
+mySet2.size                    // 4
+[...mySet2]                    // [1, 2, 3, 4]
+
+// intersect can be simulated via 
+let intersection = new Set([...set1].filter(x => set2.has(x)))
+
+// difference can be simulated via
+let difference = new Set([...set1].filter(x => !set2.has(x)))
+
+// Iterate set entries with forEach()
+mySet.forEach(function(value) {
+  console.log(value)
+})
+
+// 1
+// 2
+// 3
+// 4
 ```
 
 ## Queues and Pripority Queues
