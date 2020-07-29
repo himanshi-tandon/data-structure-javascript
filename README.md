@@ -85,7 +85,9 @@ Data Structure and methods
     - remove()
 - [Graph](#graph) 
 - [Graphs: breadth-first search](#graphs-breadth-first-search)
-Time complexcity
+
+Time Complexity Analysis in JavaScript
+
 ## Stack 
 Stack is a linear data structure in which addition or removal of element follows a particular order i.e. LIFO(Last in First Out) AND FILO(First in Last Out).
 
@@ -571,4 +573,93 @@ pq.printCollection();
 ## Trie
 ## Heap
 ## Graph 
-## Graphs: breadth-first search
+
+
+Time complexity:
+
+
+
+
+An algorithm is a self-contained step-by-step set of instructions to solve a problem. It takes time for these steps to run to completion. The time it takes for your algorithm to solve a problem is known as time complexity.
+
+
+
+Big O Notation
+The time complexity of an algorithm is commonly expressed using Big O Notation. Big O Notation describes the execution time required or the spaced used by an algorithm. Big O Notation specifically describes the worst-case scenario.
+
+As I mentioned before an algorithm are the step-by-step instructions to solve a problem. The bigger the problem, the longer you would expect your algorithm to take to solve the problem.
+
+As the size of the problem gets bigger and bigger, the cost might grow quickly, slowly or barely at all. Big O Notation is used to measure how quickly your solution is in solving a problem.
+
+The following chart shows the different levels of Big O Notation and how long it takes to complete based on number of operations and elements.
+Big O Complexity chart
+![comlextity](images/big-o-complexity.png)
+
+
+Here are some common orders of growth and their corresponding Big O Notation values.
+
+O(1) – Constant Time Complexity
+The fastest time complexity on the Big O Notation scale is called Constant Time Complexity. It is given a value of O(1).
+
+With constant time complexity, no matter how big our input is, it will always take the same amount of time to compute things.
+
+Constant time is considered the best case scenario for your JavaScript function.
+O(1) constant time complexity
+
+
+![comlextity](images/O1-constant-time-complexity.jpg)
+
+Examples: Array Lookup, hash table insertion
+
+O(log n) – Logarithmic
+With logarithmic notation execution time increases, but at a decreasing rate.
+
+Here is a good example of how to view a logarithmic search. You want to find somebody in a telephone directory that has one million names listed.
+
+The first step would be to find the 500,000 entry which is the mid point and compare it to the name you are searching for. If the midpoint name is lower in the alphabet than your name then you repeat this process but only using the top 500,000 names.
+
+You find the midpoint of these 500,000 names and compare it to your target name. If the midpoint name is above or below then keep repeating this process using just the top half or bottom half of names.
+
+If the phone book only contained three names, then you would at most need to do 2 look ups to find your target name.
+
+If the phone book had 15 names then it would take at most 4 look ups to find your target name.
+
+With a million names in a phone book then you would only have to do at most 20 look ups to find your targeted name.
+
+As you can see the time to complete increases but not as fast as the size of input increases.
+O(log n) logarithmic complexity
+
+
+![comlextity](images/Olog-n-logarithmic-complexity.jpg)
+
+Example: binary search
+
+O(n) – Linear
+O(n) describes an algorithm whose performance will grown linearly and in direct proportion to the size of the input data set.
+
+Let’s say you want to print out the contents of an array that has 10 elements. You would loop through the array printing out each element.
+
+If your array had 100 elements it would take 100 iterations through the loop to print out all the items.
+
+With one million elements it would take one million iterations.
+
+As you an see the time complexity increases as the size increase and it increases at the same rate.
+
+O(n) Linear Complexity
+
+
+
+
+![comlextity](images/On-Linear-Complexity.jpg)
+Example: Printing the elements in an array
+
+O(n2) – Quadratic
+Quadratic time complexity is almost the inverse of logarithmic complexity. With Quadratic Complexity execution time increases at an increasing rate.
+
+Quadratic time suggests that the function’s run time is proportional to the square of the input size. Quadratic time is typically represented as ‘order N squared’ or O(n^2). This notation is used because with quadratic time complexity you are completing usually two Operations that are O(1) or O(n) by themselves.
+
+O(n2) - quadratic time complexity
+
+![comlextity](images/n2-quadratic-time-complexity.jpg)
+Example: Constant time operation inside two nested for-loops, comparing 2 integer lists against each other and a bubble sort.
+
