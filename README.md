@@ -660,6 +660,7 @@ Quadratic time suggests that the function’s run time is proportional to the sq
 
 O(n2) - quadratic time complexity
 
-![comlextity](images/n2-quadratic-time-complexity.jpg)
+![comlextity](images/On2-quadratic-time-complexity.jpg)
+
 Example: Constant time operation inside two nested for-loops, comparing 2 integer lists against each other and a bubble sort.
 
